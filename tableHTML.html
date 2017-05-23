@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="Untitled-1.css">
+    <script>
+        function showDropdownContent(){
+            var dropdownContent = document.getElementById("dropdown-content");
+            dropdownContent.style.display = dropdownContent.style.display == "block" ? "none" : "block";
+        }
+    </script>
+</head>
+       
+<body>
+    <table border="1" cellpadding="10" cellspacing="10">
+        <caption>标题</caption><!--标题-->
+        <tr>
+            <td>row 1,cell 1</td>
+            <td>row 1,cell 2</td>
+        </tr>
+        <tr>
+            <td>列表
+                <ol>
+            <li>row2,cell1</li>
+            <li>row2,cell2</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+        <dl>
+            <dt>自定义列表1</dt>
+            <dd>-内容1</dd>
+            <dt>自定义2</dt>
+            <dd>-内容2</dd>
+        </dl>
+
+        <div class="dropdown">
+            <button class="dropbtn" onclick="showDropdownContent()">鼠标移动到这显示</button>
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="http://www.baidu.com">baidu</a>
+                <a href="http://www.bilibili.com">bilibili</a>
+            </div>
+        </div>
+</body>
+</html>

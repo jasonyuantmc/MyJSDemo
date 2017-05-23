@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            min-height: 100%;
+        }
+
+        #menu
+        {
+            min-height: 90%;
+        }
+
+        .center /*class*/
+        {
+            text-align: center;
+        }
+
+        p.center /*指定class*/
+        {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header" style="background-color:aqua;">
+            <h1 style="margin-bottom:200;">主要的网页标题</h1>
+        </div>
+        <div id="menu" style="background-color:burlywood;width:100px;float:left;">
+            <b>菜单</b>
+            <br>
+            HTML<br>
+            CSS<br>
+            JavaScript<br>
+        </div>
+        <div id="content" style="background-color:aquamarine;">
+            <form>
+                Username:<input type="text" name="username"><br>
+                Password:<input type="password" name="pwd"><br>
+
+                <input type="radio" name="sex" value="male">Male<br>
+                <input type="radio" name="sex" value="female">Female<br>
+
+                <input type="checkbox" name="car" value="benz">Benz<br>
+                <input type="checkbox" name="car" value="BMW">BMW<br>
+
+                <p id="demo">
+                    id demo 
+                </p>
+                <script>
+                    function myFunction() {
+                        document.getElementById("demo").innerHTML="HELLO Java";
+                    }
+                </script>
+                <input type="submit" name="sub" value="sumbit" onclick="myFunction()">
+            </form>
+        </div>
+        <div id="footer" style="background-color:blueviolet;clear:both;text-align:center">
+            底部
+        </div>
+    </div>
+</body>
+</html>
